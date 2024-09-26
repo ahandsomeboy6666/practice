@@ -4,7 +4,7 @@
   height: 140px;
   background-image: url('./imgs/nav.png');
   background-size: cover;
-  background-color: skyblue;
+  background-color: #87ceeb;
 }
 /* 头部导航栏样式 */
 .nav{
@@ -103,7 +103,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   margin: 10px 80px;
-  /* width: 100%; */
   height: 80px;
 }
 /* 左侧频道样式 */
@@ -155,7 +154,7 @@
 .channel-right{
   display: flex;
   flex-wrap: wrap;
-  width: 17%;
+  width: 232px;
   border-left: 1px solid gray;
   font-size: 14px;
 }
@@ -163,7 +162,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  width: 77px;
 }
 .channel-right-item .icon{
   width: 20px;
@@ -179,14 +178,9 @@
 /* 视频模块开始 */
 /* 视频和轮播区 */
 .content{
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* width: 100%; */
-  /* height: 300px; */
   width: 1360px;
   box-sizing: border-box;
   margin: 0 80px;
-  /* background-color: pink; */
 }
 .content .up{
   display: flex;
@@ -198,12 +192,10 @@
   position: relative;
   width: 595px;
   height: 360px;
-  background-color: blue;
+  background-color: #0000ff;
   /* border-radius: 10px; */
 }
 .carousel .carousel-img{
-  /* margin-right: 20px; */
-  /* width: 495px; */
   width: 100%;
   vertical-align: bottom;
 }
@@ -218,14 +210,7 @@
   height: 25%;
   background-color: #ffef8b;
 }
-/* .carousel .mask-two{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background:linear-gradient(to bottom,rgba(255,255,255,0) 60%, rgba(255,238,143,1) 100%)
-} */
+
 /* 轮播遮罩层区 */
 .content .carousel-mask-left{
   display: flex;
@@ -278,7 +263,6 @@
   flex-wrap: wrap;
   width: 864px;
   height: 100px;
-  /* background-color: yellow; */
 }
 .videos-first-item{
   width: 250px;
@@ -310,7 +294,7 @@
 .video{
   position: relative;
 }
-.content .video .shuaxin{
+.content .video .refresh{
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -323,12 +307,12 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 14px;
-  background-color: white;
+  background-color: #ffffff;
 }
-.content .video .shuaxin .iconfont{
+.content .video .refresh .iconfont{
   font-size: 14px;
 }
-.content .video .shuaxin .text{
+.content .video .refresh .text{
   writing-mode: vertical-lr;
 }
 /* 第二个视频区域 */
@@ -421,7 +405,7 @@
 .right-item .layer{
   position: absolute;
   top: 0;
-  background-color: gray;
+  background-color: #808080;
 }
 .right-item .layer-tiny{
   position: absolute;
@@ -524,7 +508,7 @@
 
 /* 网页元素固定模块开始 */
 /* 网页右下角固定区域 */
-.fixed{
+.floating-toolbar{
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -533,7 +517,7 @@
 
   gap: 10px;
 }
-.fixed .box{
+.floating-toolbar .box{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,17 +527,17 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.fixed .shuaxin{
+.floating-toolbar .refresh{
   background-color: #00aeec;
   color: #fff;
 }
-.fixed .box .iconfont{
+.floating-toolbar .box .iconfont{
   font-size: 22px;
 }
-.fixed .up{
+.floating-toolbar .up{
   font-size: 13px;
 }
-.fixed .up .iconfont{
+.floating-toolbar .up .iconfont{
   font-size: 14px;
 }
 /* 网页元素固定模块结束 */
