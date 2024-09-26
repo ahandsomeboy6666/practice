@@ -1,0 +1,559 @@
+/* 头部模块开始 */
+.header{
+  width: 100%;
+  height: 140px;
+  background-image: url('./imgs/nav.png');
+  background-size: cover;
+  background-color: skyblue;
+}
+/* 头部导航栏样式 */
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+.nav .item a{
+  color: #fff;
+}
+/* 头部导航栏左侧 */
+.nav-left-items{
+  display: flex;
+}
+.nav-left-items .item{
+  margin-right: 10px;
+}
+/* 头部导航栏搜索区域 */
+.search .top{
+  display: flex;
+  justify-content: space-between;
+
+  width: 500px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.search .top .icon{
+  width: 32px;
+  height: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+.search .search-input{
+  box-sizing: border-box;
+  padding: 0 5px;
+  width: 350px;
+  border: 0; 
+}
+/* 头部导航栏右侧区域 */
+.nav-right-items{
+  display: flex;
+}
+.nav-right-items .item{
+  margin-left: 10px;
+}
+.nav-right-items .item-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+}
+/* 登录区块特定样式 */
+.nav-right-items .login {
+  /* display: inline-block; */
+  background-color: #00adeb;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+/* 投稿区块特定样式 */
+.nav-right-items .contribute{
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-top: 4px;
+  background-color: #fb7299;
+  width: 80px;
+  height: 33px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* 哔哩哔哩logo */
+.logo .logo-bilibili{
+  width: 168px;
+  margin: -4px 0 0px 70px
+}
+/* 头部模块结束 */
+
+/* 频道模块开始 */
+/* 频道样式 */
+.channel{
+  display: flex;
+
+  padding: 10px 80px;
+  width: 100%;
+  height: 80px;
+  /* background-color:gray; */
+}
+/* 左侧频道样式 */
+.channel .channel-left{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.channel .channel-left-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.channel .channel-left-items .iconfont{
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+}
+.channel .icon-fengche{
+  background-color: #ff9e2c;
+}
+.channel .icon-huoyan{
+  background-color: #f07775;
+}
+/* 中间频道样式 */
+.channel .channel-center{
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.channel-center .item-text{
+  margin: 5px 5px;
+  width: 78px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 5px;
+  background-color: #f4f5f6;
+  text-align: center;
+  color: #61666d;
+  background-color: #f1f2f3;
+}
+/* 右侧频道样式 */
+.channel-right{
+  display: flex;
+  flex-wrap: wrap;
+  width: 17%;
+  border-left: 1px solid gray;
+  font-size: 14px;
+}
+.channel-right .channel-right-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.channel-right-item .icon{
+  width: 20px;
+  height: 20px;
+}
+.channel-right-item .item-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 频道模块结束 */
+
+/* 视频模块开始 */
+/* 视频和轮播区 */
+.content{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  /* height: 300px; */
+  width: 1360px;
+  box-sizing: border-box;
+  margin: 0 80px;
+  /* background-color: pink; */
+}
+.content .up{
+  display: flex;
+  height: 455px;
+}
+/* 轮播区 */
+.carousel{
+  display: flex;
+  position: relative;
+  width: 595px;
+  height: 360px;
+  background-color: blue;
+  /* border-radius: 10px; */
+}
+.carousel .carousel-img{
+  /* margin-right: 20px; */
+  /* width: 495px; */
+  width: 100%;
+  vertical-align: bottom;
+}
+.carousel .mask{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 25%;
+  background-color: #ffef8b;
+}
+/* .carousel .mask-two{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background:linear-gradient(to bottom,rgba(255,255,255,0) 60%, rgba(255,238,143,1) 100%)
+} */
+/* 轮播遮罩层区 */
+.content .carousel-mask-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 10px;
+}
+.content .carousel-mask-left .title{
+  margin-left: 10px;
+}
+.content .carousel-mask-left .point-ul{
+  display: flex;
+}
+.content .carousel-mask-left .point-ul-li{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.content .carousel-mask-right{
+  display: flex;
+  color: #fff;
+}
+.content .carousel-mask-right .icon-zuojiantou{
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.content .carousel-mask-right .icon-youjiantou{
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.content .carousel-mask-right .iconfont{
+  font-size: 20px;
+}
+/* 第一个视频区域 */
+.videos-first{
+  display: flex;
+  flex-wrap: wrap;
+  width: 864px;
+  height: 100px;
+  /* background-color: yellow; */
+}
+.videos-first-item{
+  width: 250px;
+  margin: 0 0 18px 18px;
+}
+.videos-first-item .video-img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.videos-first-item .video{
+  position: relative;
+}
+.message-count,
+.play-count{
+  display: flex;
+  align-items: center;
+}
+.info-left .iconfont{
+  margin-right: 3px;
+}
+.info .title{
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 限制行数为两行 */
+    overflow: hidden; /* 隐藏超出部分 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}
+/* 刷一刷样式 */
+.video{
+  position: relative;
+}
+.content .video .shuaxin{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 7px;
+  right: -46px;
+  width: 30px;
+  height: 74px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: white;
+}
+.content .video .shuaxin .iconfont{
+  font-size: 14px;
+}
+.content .video .shuaxin .text{
+  writing-mode: vertical-lr;
+}
+/* 第二个视频区域 */
+.videos-second{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.videos-second-item{
+  width: 250px;
+  margin: 0 0 18px 27px;
+}
+.videos-second-item .video-img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.videos-second-item .video{
+  position: relative;
+}
+.info-bottom .icon{
+  margin-right: 5px;
+}
+/* 最左边视频不要左边距 */
+.videos-second .left-item{
+  margin-left: 0;
+}
+/* 视频遮罩层 */
+.videos-second-item .mask,
+.videos-first-item .mask{
+  display: flex;
+  position: absolute;
+  align-items: end;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background:linear-gradient(to bottom, rgba(255,255,255,0),rgba(0,0,0,0.3))
+}
+/* 遮罩层文字信息 */
+.video-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 5px 4px 5px;
+  font-size: 13px;
+}
+.info-left{
+  display: flex;
+}
+.play-count{
+  margin-right: 10px;
+}
+/* 视频文字信息 */
+.videos-second-item .info,
+.videos-first-item .info{
+  font-size: 15px;
+  font-weight: 500;
+  width: 240px;
+  height: 57px;
+  margin-top: 10px;
+}
+.videos-second-item .info-bottom,
+.videos-first-item .info-bottom{
+  display: flex;
+  font-size: 13px;
+  color: gray;
+}
+.videos-second-item .title,
+.videos-first-item .title{
+  height:44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 最右边视频特殊样式 */
+.right-item .surface{
+  z-index: 999;
+}
+.right-item{
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px #cccc;
+}
+.right-item .info{
+  margin-bottom: 10px;
+}
+.right-item .layer{
+  position: absolute;
+  top: 0;
+  background-color: gray;
+}
+.right-item .layer-tiny{
+  position: absolute;
+  top: 0;
+  background-color: #ccc;
+}
+.right-item .mask{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  align-items: start;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+}
+.right-item .info{
+  padding-left: 10px;
+}
+.right-item-up{
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.video-img{
+  border-radius: 6px;
+}
+.right-item-up .icon{
+  border:1px solid #ff6699;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #ff6699;
+  margin-right: 6px;
+  padding: 0 3px;
+}
+.right-item .right-item-up .icon{
+  transform: translate(0,1px);
+}
+.surface .video-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:60px;
+  height: 30px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+}
+/* 视频模块结束 */
+
+/* 特殊图标处理模块开始 */
+/* 播放量样式 */
+.icon-bofangliang{
+  font-size: 12px;
+  transform: translate(0px, 1px);
+}
+/* 评论数样式 */
+.icon-pinglunshu{
+  transform: translate(0px, 1px);
+  font-size: 17px;
+}
+/* 点赞样式 */
+.info-bottom .like{
+  width: 44px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #fff0e3;
+  color: #ff8934;
+  border-radius: 5px;
+}
+/* 广告样式 */
+.icon-guanggao1{
+  font-size: 29px;
+  transform: translate(0px, -6px);
+}
+.icon .zhiboing{
+  width: 10px;
+  height: 10px;
+}
+.icon-zhibo{
+  color: #48cfe5;
+}
+/* 番剧样式 */
+.icon-fanju{
+  font-size: 22px;
+  color: #eacd76;
+}
+/* 国创样式 */
+.icon-guochuang{
+  font-size: 22px;
+  color:#ff5c7a;
+}
+/* 特殊图标处理模块结束 */
+
+/* 网页元素固定模块开始 */
+/* 网页右下角固定区域 */
+.fixed{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 30px;
+  right: 20px;
+
+  gap: 10px;
+}
+.fixed .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.fixed .shuaxin{
+  background-color: #00aeec;
+  color: #fff;
+}
+.fixed .box .iconfont{
+  font-size: 22px;
+}
+.fixed .up{
+  font-size: 13px;
+}
+.fixed .up .iconfont{
+  font-size: 14px;
+}
+/* 网页元素固定模块结束 */
