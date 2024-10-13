@@ -1,0 +1,682 @@
+body{
+  background-color: #000;
+}
+/* 头部导航栏样式 */
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+
+.nav .item a {
+  color: #fff;
+}
+
+/* 头部导航栏左侧 */
+.nav-left-items {
+  display: flex;
+}
+
+.nav-left-items .item {
+  margin-right: 14px;
+  font-size: 14px;
+}
+
+.nav-left-items .first-page {
+  display: flex;
+}
+
+.nav-left-items .icon-bilibili-line {
+  margin-right: 3px;
+}
+
+/* 头部导航栏搜索区域 */
+.search .top {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  height: 40px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.search .top .icon {
+  width: 32px;
+  height: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.search .search-input {
+  width: 350px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+/* 头部导航栏右侧区域 */
+.nav-right-items {
+  display: flex;
+}
+
+.nav-right-items .item {
+  margin-left: 10px;
+}
+
+.nav-right-items .item-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+}
+
+/* 登录区块特定样式 */
+.nav-right-items .login {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #00adeb;
+}
+
+/* 投稿区块特定样式 */
+.nav-right-items .contribute {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80px;
+  height: 33px;
+  padding: 0 10px;
+  margin-top: 4px;
+  border-radius: 10px;
+  background-color: #fb7299;
+}
+
+/* 轮播图区块 */
+.carousel{
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img{
+  width: 100%;
+}
+
+.carousel .text-items{
+  position: absolute;
+  padding: 70px 14px 0 14px;
+  top: 0px;
+  left: 1180px;
+  width: 170px;
+  height: 296px;
+  background-color: rgba(0, 0, 0,.4);
+}
+
+.carousel .item{
+  display: block;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.carousel .title{
+  width: 168px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ccc;
+}
+
+.carousel .content{
+  display: none;
+  padding-left: 8px;
+  height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ccc;
+}
+
+.carousel .active{
+  padding: 12px 0;
+}
+
+.carousel .active .title{
+  font-size: 19px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.carousel .active .content{
+  display: block;
+  margin-top: 6px;
+  height: 16px;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* 频道区块 */
+.channel{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  box-sizing: border-box;
+  padding-left: 130px;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(
+    rgba(255,255,255,0) 0%,
+    rgba(0,0,0,1)
+  );
+}
+
+.channel .top{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.channel .top .text{
+  margin-right: 15px;
+}
+
+.channel .top .all{
+  display: flex;
+  align-items: center;
+}
+
+.channel .top .a-text{
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.channel .bottom{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  height: 60px;
+}
+
+.channel .b-item{
+  margin: 10px 20px 0 0 ;
+  font-size: 13px;
+}
+.channel .item{
+  margin-right: 60px;
+}
+
+/* 第一个视频区块 */
+.first-videos{
+  display: flex;
+  margin-top: 50px;
+  padding: 0 130px;
+}
+
+.first-videos .left{
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 15px;
+  width: 524px;
+  height: 300px;
+  background-color: #000;
+}
+
+.first-l-img{
+  width: 524px;
+}
+
+.first-videos .mask{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.first-videos .mask .top{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.first-videos .mask .top .t-left{
+  margin-left: 20px;
+  color: #fff;
+}
+
+.first-videos .mask .t-bottom .icons{
+  display: flex;
+  align-items: center;
+}
+
+.first-videos .t-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  /* font-size: 18px; */
+  background-color: #0cb6f2;
+  border-radius: 20px 0 0 20px;
+}
+
+.first-videos .right{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-videos .item{
+  margin-right: 15px;
+}
+
+.first-r-img{
+  width: 164px;
+  border-radius: 8px;
+}
+
+.first-videos .item .text1{
+  margin-top: 5px;
+  width: 164px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.first-videos .item .text2{
+  margin-top: 3px;
+  color: #808080;
+  font-size: 12px;
+}
+
+/* 电影热播区块 */
+.hot-movie{
+  margin-top: 30px;
+  padding: 0 130px;
+}
+
+.hot-movie .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.hot-movie .top .left{
+  font-size: 24px;
+}
+
+.hot-movie .top .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: #242628;
+  border-radius: 10px;
+}
+
+.hot-movie .top .right .text{
+  margin-right: 5px;
+}
+
+.hot-movie .bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.hot-movie .video{
+  position: relative;
+  width: 164px;
+  height: 220px;
+}
+
+.hot-movie .hot-movie-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hot-movie .text1{
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.hot-movie .text2{
+  margin-top: 3px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.hot-movie .hotest{
+  display: none;
+  margin-top: 5px;
+}
+
+.hot-movie .infos .active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  color: #fe8e3f;
+  background-color: #41281b;
+  border-radius: 5px;
+}
+.hot-movie .mask{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hot-movie .mask-bottom{
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 0 10px 4px 0;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 特殊视频区块 */
+.special{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 130px;
+}
+
+.special .item{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  color: #fff;
+  background-color: #191b24;
+  border-radius: 10px;
+}
+
+.special .left{
+  width: 124px;
+  height: 100px;
+}
+
+.special-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.special .right{
+  margin-left: 10px;
+}
+
+.special .text1{
+  font-size: 18px;
+}
+
+.special .text2{
+  margin-top: 2px;
+  font-size: 13px;
+  color: #808080;
+}
+
+/* 独家热播区块 */
+.exclusive{
+  margin-top: 50px;
+  padding: 0 130px;
+}
+
+.exclusive .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.exclusive .top .left{
+  font-size: 24px;
+}
+
+.exclusive .bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.exclusive .video{
+  position: relative;
+  width: 164px;
+  height: 220px;
+}
+
+.exclusive .exclusive-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.exclusive .text1{
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.exclusive .text2{
+  margin-top: 3px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.exclusive .hotest{
+  display: none;
+  margin-top: 5px;
+}
+
+.exclusive .mask{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.exclusive .mask-bottom{
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 0 10px 4px 0;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 即将上线区块 */
+.gonna{
+  margin-top: 50px;
+  padding: 0 130px;
+}
+
+.gonna .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.gonna .top .left{
+  font-size: 24px;
+}
+
+.gonna .bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.gonna .video{
+  position: relative;
+  width: 164px;
+  height: 220px;
+}
+
+.gonna .gonna-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gonna .text1{
+  margin-top: 5px;
+  width: 164px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.gonna .text2{
+  margin-top: 3px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.gonna .hotest{
+  display: none;
+  margin-top: 5px;
+}
+
+.gonna .mask{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gonna .mask-bottom{
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 0 10px 4px 0;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 即将上线区块 */
+.more{
+  margin-top: 50px;
+  padding: 0 130px;
+}
+
+.more .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.more .top .left{
+  font-size: 24px;
+}
+
+.more .bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.more .bottom .item{
+  margin-top: 10px;
+}
+.more .video{
+  position: relative;
+  width: 164px;
+  height: 220px;
+}
+
+.more .more-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.more .text1{
+  margin-top: 5px;
+  width: 164px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.more .text2{
+  margin-top: 3px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.more .hotest{
+  display: none;
+  margin-top: 5px;
+}
+
+.more .mask{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.more .mask-bottom{
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 0 10px 4px 0;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 700;
+}

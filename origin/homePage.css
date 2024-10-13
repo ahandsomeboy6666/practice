@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   box-sizing: border-box;
   padding: 0 30px;
   width: 100%;
@@ -297,10 +296,10 @@
 }
 .info .title{
   display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* 限制行数为两行 */
-    overflow: hidden; /* 隐藏超出部分 */
-    text-overflow: ellipsis; /* 显示省略号 */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 /* 刷一刷样式 */
 .video{
